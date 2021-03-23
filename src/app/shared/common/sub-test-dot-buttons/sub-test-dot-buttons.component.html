@@ -3,8 +3,8 @@
         <li *ngIf="variable.test_res && (title() == 'Test order webhook')">
             <form class="form-inline mr-2">
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck" (click)="subscribe=!subscribe" [checked]="subscribe">
-                  <label class="custom-control-label font12 pt-1" for="customCheck">Check this custom checkbox</label>
+                  <input type="checkbox" class="custom-control-input" id="customCheck" (change)="subscribe=!subscribe" [checked]="subscribe==true">
+                  <label class="custom-control-label font12 pt-1" for="customCheck">Use the same URL to subscribe</label>
                 </div>
               </form>
         </li>
@@ -21,7 +21,7 @@
             </button>
         </li>
         <li>
-            <button class="btn btn-default" routerLink="/home/webhooks/test-order"
+            <button class="btn" routerLink="/home/webhooks/test-order"
                 [disabled]="(title() == 'Subscribe to order webhook')?true:false"
                 [ngClass]="(title() != 'Test order webhook')?'btn-default':'btn-primary test_color'" (click)="test()">
                 {{(variable.test_res && (title()=='Test order webhook'))?'Retest':'Test'}}
