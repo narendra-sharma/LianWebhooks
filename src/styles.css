@@ -88,6 +88,12 @@ h1{
 .number, .boolean, .string, .null[contenteditable]:focus {
     outline: none;
 }
+
+.modal-content {
+    width: 379px;
+    border-radius: 2px;
+    height: 523px;
+}
 @media (max-width: 1024px) {
     h1{
         font-size: 30px;

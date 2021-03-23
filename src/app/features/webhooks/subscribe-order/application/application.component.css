@@ -6,10 +6,37 @@
 }
 .subscribe-application p {
     color:#0A1E42;
- }
-.subscribe-application select.custom-select {
+}
+.subscribe-application .btn-warning{
+    background-color: transparent;
+    color: #253858;
+    border-color: #E1E1E1;
+}
+.subscribe-application .dropdown-divider{
+    margin: .5rem;
+}
+.subscribe-application .btn-default{
+    color: #1A73E8;
+}
+.subscribe-application .dropdown-menu a{
+    color: #242424;
+}
+/* Modal */
+.modal-header, .modal-footer{
+    border: 0px;
+}
+.modal-body input{
+    height: 28px;
+}
+.modal-body textarea{
+    height: 163px;
+}
+::placeholder{
     font-size: 12px;
-    border-radius: 2px;
-    border-color:#E1E1E1;
-    height: 32px !important;
+    color: #253858;
+}
+.modal-body .btn-warning{
+    background-color: transparent;
+    color: #253858;
+    border-color: #E1E1E1;
 }
